@@ -22,7 +22,7 @@
 
 ## 📊 Project Status
 
-create-create-any-app is currently in active development. The basic web application scaffolding is available, with mobile and desktop support coming soon!
+create-any-app is currently in active development. The basic web application scaffolding is available, with mobile and desktop support coming soon!
 
 ## 🚀 Getting Started
 
@@ -38,7 +38,7 @@ bun >= 1.2.0
 1. Run the CLI directly with npx
 
 ```bash
-npx create-create-any-app
+npx create-any-app
 ```
 
 4. Follow the interactive prompts to configure your application
@@ -94,7 +94,7 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information
 
 ## 🙏 Acknowledgments
 
-create-create-any-app stands on the shoulders of these amazing open-source projects:
+create-any-app stands on the shoulders of these amazing open-source projects:
 
 ### Core Dependencies
 
@@ -117,8 +117,8 @@ create-create-any-app stands on the shoulders of these amazing open-source proje
 ### Special Thanks
 
 - The entire open-source community for their contributions
-- All contributors who helped shape create-create-any-app
+- All contributors who helped shape create-any-app
 
 ## 📞 Contact
 
-[![GitHub Badge](https://img.shields.io/badge/-CreateAnyApp-000000?style=flat-square&logo=github&logoColor=white)](https://github.com/adharshgamingyt/create-any-app)
+[![GitHub Badge](https://img.shields.io/badge/-AnyApp-000000?style=flat-square&logo=github&logoColor=white)](https://github.com/adharshgamingyt/create-any-app)
