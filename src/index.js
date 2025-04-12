@@ -17,7 +17,7 @@ import {
   number,
   rawlist,
 } from "@inquirer/prompts";
-import { nextjs_i } from "./helper/base_temp.js";
+import { nextjs_i } from "./helper/nextjs.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, "..");
