@@ -121,4 +121,4 @@ create-any-app stands on the shoulders of these amazing open-source projects:
 
 ## 📞 Contact
 
-[![GitHub Badge](https://img.shields.io/badge/-Any_App-000000?style=flat-square&logo=github&logoColor=white)](https://github.com/adharshgamingyt/any-app)
+[![GitHub Badge](https://img.shields.io/badge/-CreateAnyApp-000000?style=flat-square&logo=github&logoColor=white)](https://github.com/adharshgamingyt/any-app)
