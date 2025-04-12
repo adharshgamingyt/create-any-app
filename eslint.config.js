@@ -8,10 +8,9 @@ export default defineConfig([
     plugins: { js },
     extends: ["js/recommended", "plugin:prettier/recommended"],
   },
-  { files: ["**/*.{js,mjs,cjs}"], languageOptions: { globals: globals.node } },
   {
-    rules: {
-      "prettier/prettier": "error",
-    },
+    files: ["**/*.{js,mjs,cjs}"],
+    languageOptions: { globals: globals.node },
+    rules: {},
   },
 ]);
