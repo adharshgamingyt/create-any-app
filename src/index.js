@@ -18,6 +18,7 @@ import {
   rawlist,
 } from "@inquirer/prompts";
 import { nextjs_i } from "./helper/nextjs.js";
+import { react_i } from "./helper/reactjs.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, "..");
@@ -27,6 +28,13 @@ const templates = fs.readdirSync(templatePath);
 const extra = fs.readdirSync(path.join(templatePath, "extra"));
 
 export const main = async () => {
+  const packageManagers = [
+    { name: "npm", value: "npx", color: chalk.red },
+    { name: "yarn", value: "yarn", color: chalk.hex("#2C8EBB") },
+    { name: "pnpm", value: "pnpm", color: chalk.hex("#F69220") },
+    { name: "bun", value: "bunx", color: chalk.hex("#FBF0DF") },
+  ];
+
   const wait = (milliseconds) =>
     new Promise((resolve) => setTimeout(resolve, milliseconds));
 
@@ -110,28 +118,13 @@ export const main = async () => {
       });
 
       if (framework === "next.js") {
-        const packageManagers = [
-          {
-            name: chalk.red("npm"), // npm uses a red logo
-            value: "npx",
-          },
-          {
-            name: chalk.hex("#2C8EBB")("yarn"), // yarn uses a blue color (#2C8EBB)
-            value: "yarn",
-          },
-          {
-            name: chalk.hex("#F69220")("pnpm"), // pnpm uses orange (#F69220)
-            value: "pnpm",
-          },
-          {
-            name: chalk.hex("#FBF0DF")("bun"), // bun uses a light beige/cream color (#FBF0DF)
-            value: "bunx",
-          },
-        ];
-
+        // Package manager selection
         const packageManager = await select({
           message: chalk.red("Select the package manager you want to use:"),
-          choices: packageManagers,
+          choices: packageManagers.map((pm) => ({
+            name: pm.color(pm.name),
+            value: pm.value,
+          })),
         });
 
         const name = await input({
@@ -142,16 +135,34 @@ export const main = async () => {
         await wait(1000);
         spinner.success({ text: "Next.js app creation will start!" });
         nextjs_i(packageManager, name);
+      } else if (framework === "react.js") {
+        // Package manager selection
+        const packageManager = await select({
+          message: chalk.red("Select the package manager you want to use:"),
+          choices: packageManagers.map((pm) => ({
+            name: pm.color(pm.name),
+            value: pm.value,
+          })),
+        });
+
+        const name = await input({
+          message: chalk.green("Enter the name of your app:"),
+        });
+
+        const spinner = createSpinner("Redirecting to React.js CLI...").start();
+        await wait(1000);
+        spinner.success({ text: "React.js app creation will start!" });
+        react_i(packageManager, name);
       } else {
         console.log(
-          chalk.greenBright(
+          chalk.yellowBright(
             `You selected ${framework}. Default template setup for this framework is not yet implemented.`,
           ),
         );
       }
     } else {
       console.log(
-        chalk.greenBright(
+        chalk.yellowBright(
           "You chose to explore templates with more features. This functionality is under development.",
         ),
       );
@@ -165,4 +176,9 @@ export const main = async () => {
   }
 };
 
-main();
+main().catch((error) => {
+  console.log(
+    chalk.red("Error: Something went wrong report in github!"),
+    error,
+  );
+});

@@ -4,9 +4,6 @@ import { createSpinner } from "nanospinner";
 import { select, confirm } from "@inquirer/prompts";
 
 export const nextjs_i = async (packageManager, name) => {
-  const wait = (milliseconds) =>
-    new Promise((resolve) => setTimeout(resolve, milliseconds));
-
   try {
     console.log(
       chalk.cyanBright(
@@ -14,7 +11,6 @@ export const nextjs_i = async (packageManager, name) => {
       ),
     );
 
-    // Ask for all Next.js configuration options
     const useTypeScript = await confirm({
       message: "Would you like to use TypeScript?",
       default: true,
@@ -49,7 +45,6 @@ export const nextjs_i = async (packageManager, name) => {
       default: false,
     });
 
-    // Build command and arguments
     let command;
     let args = [];
 
@@ -72,7 +67,6 @@ export const nextjs_i = async (packageManager, name) => {
       return;
     }
 
-    // Add flags based on user choices
     if (useTypeScript) args.push("--ts");
     else args.push("--js");
 
@@ -90,10 +84,8 @@ export const nextjs_i = async (packageManager, name) => {
 
     if (!useImportAlias) args.push("--import-alias", "@/*");
 
-    // Log the full command being executed
     console.log(chalk.blue(`Executing: ${command} ${args.join(" ")}`));
 
-    // Create spinner and execute command
     const spinner = createSpinner("Creating Next.js app...").start();
     await execa(command, args, { stdio: "inherit" });
     spinner.success({ text: `Next.js app "${name}" created successfully!` });
@@ -102,7 +94,6 @@ export const nextjs_i = async (packageManager, name) => {
     console.log(chalk.yellow(`To get started, run:\n`));
     console.log(chalk.white(`  cd ${name}`));
 
-    // Suggest startup command based on package manager
     let startCmd = "";
     if (packageManager === "yarn") {
       startCmd = "yarn dev";
