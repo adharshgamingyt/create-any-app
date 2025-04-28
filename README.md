@@ -32,8 +32,8 @@ Create-create-any-app is currently in active development. The basic web applicat
 ### Prerequisites
 
 ```bash
-`node >= 16.0.0`
-`bun >= 1.2.0`
+node >= 16.0.0
+bun >= 1.2.0
 
 ```
 
@@ -42,7 +42,7 @@ Create-create-any-app is currently in active development. The basic web applicat
 1. Run the CLI directly with npx:
 
 ```bash
-`npx Create-create-any-app`
+npx Create-create-any-app
 ```
 
 2. Follow the interactive prompts to configure your application
