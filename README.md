@@ -1,16 +1,16 @@
-# Create-Any-App
+# Create-create-any-app
 
 <<<<<<< HEAD
 **A versatile CLI tool to quickly scaffold applications across multiple platforms and frameworks with intelligent defaults and customization options.**
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/adharshgamingyt/any-app?style=social)](https://github.com/adharshgamingyt/any-app/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/adharshgamingyt/any-app)](https://github.com/adharshgamingyt/any-app/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/adharshgamingyt/any-app)](https://github.com/adharshgamingyt/any-app/pulls)
+[![GitHub Stars](https://img.shields.io/github/stars/adharshgamingyt/create-any-app?style=social)](https://github.com/adharshgamingyt/create-any-app/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/adharshgamingyt/create-any-app)](https://github.com/adharshgamingyt/create-any-app/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/adharshgamingyt/create-any-app)](https://github.com/adharshgamingyt/create-any-app/pulls)
 
 [Documentation](https://example.com/docs) |
-[Report Bug](https://github.com/adharshgamingyt/any-app/issues) |
-[Request Feature](https://github.com/adharshgamingyt/any-app/issues)
+[Report Bug](https://github.com/adharshgamingyt/create-any-app/issues) |
+[Request Feature](https://github.com/adharshgamingyt/create-any-app/issues)
 
 ## ✨ Features
 
@@ -25,7 +25,7 @@
 
 ## 📊 Project Status
 
-create-any-app is currently in active development. The basic web application scaffolding is available, with mobile and desktop support coming soon!
+Create-create-any-app is currently in active development. The basic web application scaffolding is available, with mobile and desktop support coming soon!
 
 ## 🚀 Getting Started
 
@@ -42,7 +42,7 @@ create-any-app is currently in active development. The basic web application sca
 1. Run the CLI directly with npx:
 
 ```bash
-`npx create-any-app`
+`npx Create-create-any-app`
 ```
 
 2. Follow the interactive prompts to configure your application
@@ -98,4 +98,4 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information
 
 ## 📞 Contact
 
-[![GitHub Badge](https://img.shields.io/badge/-Any_App-000000?style=flat-square&logo=github&logoColor=white)](https://github.com/adharshgamingyt/any-app)
+[![GitHub Badge](https://img.shields.io/badge/-Any_App-000000?style=flat-square&logo=github&logoColor=white)](https://github.com/adharshgamingyt/create-any-app)
