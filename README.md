@@ -99,8 +99,3 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information
 ## 📞 Contact
 
 [![GitHub Badge](https://img.shields.io/badge/-Any_App-000000?style=flat-square&logo=github&logoColor=white)](https://github.com/adharshgamingyt/any-app)
-=======
-inspired by create-t3-app
-
-anyone can contribute and help me it will be an greate support to
->>>>>>> 58028b4dff880237b87afa5d223e3fadb7650837
