@@ -1,1 +1,3 @@
-console.log("Hello world!");
+import { renderTitle } from "./utils/title";
+
+console.log(renderTitle());

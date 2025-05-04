@@ -47,14 +47,6 @@ npx Create-create-any-app
 
 2. Follow the interactive prompts to configure your application
 
-## 🔧 Tech Stack
-
-- **Core**: Node.js, Bun
-- **UI**: chalk, figlet, nanospinner, gradient-string
-- **Interaction**: @inquirer/prompts
-- **Templates**: Customized templates for various frameworks
-- **Build Tools**: Integration with framework-specific CLIs
-
 ## 📷 Screenshots
 
 <div align="center">
