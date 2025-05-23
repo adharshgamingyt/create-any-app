@@ -1,6 +1,5 @@
 # Create-create-any-app
 
-<<<<<<< HEAD
 **A versatile CLI tool to quickly scaffold applications across multiple platforms and frameworks with intelligent defaults and customization options.**
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
